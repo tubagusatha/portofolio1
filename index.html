@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>MYE</title>
+</head>
+<body>
+    
+    <!-- header -->
+
+    <header class="header">
+        <div class="div"><h5 class="h5">My Portofolio</h5></div>
+        <nav class="navbar">
+            <a class="navbar-list" href="#bio">Aboutme</a>
+            <a class="navbar-list" href="#idn">My school</a>
+            <a class="navbar-list" href="#myproject">My Project</a>
+            <a class="navbar-list" href="#mycontact">My Contact</a>
+        </nav>
+    </header>
+
+    <!-- end header -->
+    
+
+    <!-- end parallax -->
+
+
+
+    <!-- parallax -->
+
+    <section class="section">
+        <img src="bg.jpg" id="bg" alt="" srcset="">
+        <img src="moon.png" id="moon" alt="" srcset="">
+        <img src="mountain.png" id="mountain" alt="" srcset="">
+        <img src="road.png" id="road" alt="" srcset="">
+        <h2 id="text">TUBAGUS ATHALLA</h2>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.4 +'px'
+            moon.style.left = -value * 0.4 +'px'
+            mountain.style.top = -value * 0.14 +'px'
+            road.style.top = value * 0.14 +'px'
+            text.style.top = value * 1 +'px'
+            
+        })
+    </script>
+
+    <!-- end parallax -->
+
+    <!-- start -->
+
+
+    <main class="main">
+
+    <!-- title -->
+
+    <div class="title">
+        <h4 class="tilte">Selamat datang di portofolio ku</h4>
+    </div>
+
+    <!-- end title -->
+
+
+
+    <!-- aboutme -->
+
+    <div class="aboutme">
+       
+        <div class="img-sroll">
+            <img class="img" id="bio" src="bio.png" alt="">
+        </div>
+    
+        <div class="box">
+            <div class="title-list"><h4 class="h4">ABOUT ME</h4></div>
+
+
+ <script type="text/javascript">
+    let bio = document.getElementById("bio");
+    
+
+    window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+
+    bio.style.left = value * 0.1 +'px'
+    
+})
+</script>
+
+        <p class="p">Hai namaku Tubagus athalla nibras islamy, umur 16.</p>
+        <p class="p">Saya tinggal di Purwakarta, jawa barat. Saya 4 bersaudara dari 2.</p>
+        <p class="p">Saya lahir tanggal 18 september 2006 di cimahi, dan hobi saya adalah berenang.</p>
+        <p class="p">Cita cita saya ingin menjadi programmer</p>
+    
+    
+        </div>
+</div>
+
+    <!-- end aboutme -->
+
+
+
+
+    <!-- myschool -->
+    
+    <div class="myschool">
+
+        <div class="imgschool">
+            <img class="image" id="idn" src="Logo-IDN-Biru.png" alt="">
+        </div>
+
+    <div class="container">
+        <div class="title-list"><h4 class="h4">MY SCHOOL</h4></div>
+
+        <script type="text/javascript">
+
+            let idn = document.getElementById("idn");
+
+        window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        idn.style.left = value * 0.1 +'px'
+    })
+        </script>
+
+        <p class="p">Saya sekolah di SMK IDN Boardingschool, di Bogor pamijahan gn.sari.</p>
+        <p class="p">Sekolah IDN mempunyai banyak cabang, ada yang di jonggol, solo, Balikpapan.</p>
+        <p class="p">Bahkan katanya IDN akan menjadi sekolah internasional karena IDN mempunyai</p>
+        <p class="p">cabang yang berada di Turki, sekolahnya berbasis IT.</p>
+        <p class="p">Dan di IDN Ada 3 jurusan, Yaitu: RPL, TKJ, Dan DMM.</p>
+
+
+    </div>
+    </div>
+
+    <!-- end myschool -->
+
+
+    
+
+    <!-- my project -->
+
+    <div class="myproject">
+        <div class="project-me"><h4 class="text-project">MY PROJECT</h4>
+        <p class="p">Ini adalah project yang saya buat ketika gabut</p>
+        </div>
+
+        <div class="project" id="myproject">
+            <a class="list" href="https://codepen.io/tubagusatha/pen/poKrGLW"><h3  class="h3">PARTICLE</h3></a>
+            <a class="list" href="https://codepen.io/tubagusatha/pen/oNyemdR"><h3 class="h3">CLOCK</h3></a>
+            <a class="list" href="https://codepen.io/tubagusatha/pen/wvXqNxo"><h3 class="h3">TEXT FOCUS</h3></a>
+        </div>
+    </div>
+
+    <!-- end myproject -->
+
+
+    <!-- my Contact -->
+   <div class="contact__uni">
+        <div class="mycontact" id="mycontact">
+            <div contact><h4 class="h4">MY CONTACT</h4>
+            <p class="p">Contact saya. Follow me</p>
+        </div>
+        <div class="img-contact">
+            <span class="span"><a href=""><img class="img-contactme" src="yt.png" alt=""></a></span>
+            <span class="span"><a href=""><img class="img-contactme" src="linkedin.png" alt=""></a></span>
+            <span class="span"><a href=""><img class="img-contactme" src="ig.png" alt=""></a></span>
+        </div>
+    </div>
+</div>
+
+    
+</main>
+
+    <footer class="footer">
+        <div class="text-footer"><h4 class="h4">TERIMA KASIH</h4></div>
+
+        <p class="p">"Bermimpilah setinggi langit, jika engkau jatuh, engkau akan jatuh di antara bintang."</p>
+        <p class="p">-Soekarno-</p>
+
+        <div class="wave">
+            <link rel="stylesheet" href="wave.css">
+            <section>
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+                <div class="wave wave4"></div>
+            </section>
+        </div>
+
+    </footer>
+
+    
+
+</body>
+</html>
