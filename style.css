@@ -97,8 +97,8 @@ section img
 {
     color: #fff;
     font-size: 40px;
-    margin-top: 100px ;
-
+    margin-top: 100px;
+    text-align: center;
 }
 
 
@@ -132,7 +132,7 @@ section img
 .navbar-list {
     display: flex;
     justify-content: space-between;
-    margin: 5px 20px 0px 20px;
+    margin: auto 20px;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -217,7 +217,7 @@ section img
 
 
 .container {
-    margin-top: 1000px;
+    margin-top: 600px;
     text-align: center;
 }
 
@@ -293,7 +293,7 @@ section img
 .list{
     border-radius: 50px;
     height: 10px;
-    width: 200px;
+    width: 196px;
     text-decoration: none;
     padding: 40px;
     margin: 30px;
@@ -552,7 +552,7 @@ section img
     }
 }
 
-}
+
 
 @media screen and (max-width:320px) {
     .header {
