@@ -88,6 +88,10 @@ section img
     filter: drop-shadow(0 0 16px #fff) drop-shadow(0 0 25px #fff);
 }
 
+#kapal {
+    z-index: -4;
+}
+
 #bg {
     z-index: -200;
 }
