@@ -34,14 +34,16 @@
     <!-- parallax -->
 
     <section class="section">
-        <img class="img-prlx" src="bg.jpg" id="bg" alt="" srcset="">
-        <img class="img-prlx" src="moon.png" id="moon" alt="" srcset="">
-        <img class="img-prlx" src="mountain.png" id="mountain" alt="" srcset="">
-        <img class="img-prlx" src="road.png" id="road" alt="" srcset="">
-        <h2  class="h2" id="text">TUBAGUS ATHALLA</h2>
+        <img src="bg.jpg" id="bg" alt="" srcset="">
+        <img src="moon.png" id="moon" alt="" srcset="">
+        <img src="bb 1.png" id="kapal" alt="" srcset="">
+        <img src="mountain.png" id="mountain" alt="" srcset="">
+        <img src="Frame 4 1.png" id="road" alt="" srcset="">
+        <h2 id="text">TUBAGUS ATHALLA</h2>
     </section>
     <script type="text/javascript">
         let bg = document.getElementById("bg");
+        let kapal = document.getElementById("kapal");
         let moon = document.getElementById("moon");
         let mountain = document.getElementById("mountain");
         let road = document.getElementById("road");
@@ -52,8 +54,9 @@
 
             bg.style.top = value * 0.4 +'px'
             moon.style.left = -value * 0.4 +'px'
+            kapal.style.top = value * 0.4 +'px'
             mountain.style.top = -value * 0.14 +'px'
-            road.style.top = value * 0.14 +'px'
+            road.style.top = value * 0.11 +'px'
             text.style.top = value * 1 +'px'
             
         })
