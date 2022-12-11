@@ -8,19 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="media.css">
     <title>MYE</title>
 </head>
-<body>
+<body>      
     
     <!-- header -->
 
     <header class="header">
         <div class="div"><h5 class="h5">My Portofolio</h5></div>
-        <nav class="navbar">
-            <a class="navbar-list" href="#bio">Aboutme</a>
-            <a class="navbar-list" href="#idn">My school</a>
-            <a class="navbar-list" href="#myproject">My Project</a>
-            <a class="navbar-list" href="#mycontact">My Contact</a>
+        <nav class="navbar-lisy">
+            <a class="navbar-item" href="#bio">Aboutme</a>
+            <a class="navbar-item" href="#idn">My school</a>
+            <a class="navbar-item" href="#myproject">My Project</a>
+            <a class="navbar-item" href="#mycontact">My Contact</a>
         </nav>
     </header>
 
@@ -91,17 +92,7 @@
             <div class="title-list"><h4 class="h4">ABOUT ME</h4></div>
 
 
- <script type="text/javascript">
-    let bio = document.getElementById("bio");
-    
-
-    window.addEventListener('scroll', function(){
-    var value = window.scrollY;
-
-    bio.style.left = value * 0.1 +'px'
-    
-})
-</script>
+ 
 
         <p class="p">Hai namaku Tubagus athalla nibras islamy, umur 16.</p>
         <p class="p">Saya tinggal di Purwakarta, jawa barat. Saya 4 bersaudara dari 2.</p>
@@ -121,23 +112,13 @@
     
     <div class="myschool">
 
-        <div class="imgschool">
-            <img class="image" id="idn" src="Logo-IDN-Biru.png" alt="">
-        </div>
-          
-    <div class="container">
-        <div class="title-list"><h4 class="h4">MY SCHOOL</h4></div>
+        
+        <div class="container">
+            <div class="imgschool">
+                <img class="image" id="idn" src="Logo-IDN-Biru.png" alt="">
+            </div>
+            <div class="title-list"><h4 class="h4">MY SCHOOL</h4></div>
 
-        <script type="text/javascript">
-
-            let idn = document.getElementById("idn");
-
-        window.addEventListener('scroll', function(){
-        var value = window.scrollY;
-
-        idn.style.left = value * 0.1 +'px'
-    })
-        </script>
     <div class="myschoolr"></div>
         <p class="p">Saya sekolah di SMK IDN Boardingschool, di Bogor pamijahan gn.sari.</p>
         <p class="p">Sekolah IDN mempunyai banyak cabang, ada yang di jonggol, solo, Balikpapan.</p>
@@ -249,7 +230,7 @@
 
     </footer>
 
-    
+    <script src="main.js"></script>
 
 </body>
 </html>

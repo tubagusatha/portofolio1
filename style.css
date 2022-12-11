@@ -129,6 +129,8 @@ section img
     justify-content: space-between;
     height: auto;
     padding: 5px;
+    position: fixed;
+    z-index: 50000;
 }
 
 .h5 {
@@ -137,13 +139,12 @@ section img
     font-size: 35px;
 }
 
-.navbar {
+.navbar-list {
     display: flex;
     justify-content: space-between;
 }
 
-.navbar-list {
-    display: flex;
+.navbar-item {
     justify-content: space-between;
     margin: auto 20px;
     text-decoration: none;
@@ -156,11 +157,12 @@ section img
     filter: drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff);
 }
 
-.navbar-list:hover {
+.navbar-item:hover {
     filter: drop-shadow(0 0 205px #fff) drop-shadow(0 0 230px #fff);
     transition: 0.5s;
     color: #fff;
 }
+
 
 
 .aboutme {
@@ -201,7 +203,6 @@ section img
     justify-content: center;
     align-items: center;
     margin:  0 auto;
-    float: left;
     border-radius: 200px;
 
 }
@@ -245,7 +246,6 @@ section img
     justify-content: center;
     align-items: center;
     margin:  0 auto;
-    float: left;
 }
 
 .image::before {
@@ -373,178 +373,74 @@ section img
 
 }
 
-
-
-
-@media screen and (max-width: 912px) {
-
-    .header {
-        width: 140%;
-    }
-
-    .main {
-        width: 140%;
-    }
-
-    .section {
-        width: 140%;
-    }
-
-    .footer {
-        width: 140%;
-    }
-    
-}
-
-
-@media screen and (max-width:1280) {
-    .section {
-        height: 220%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        width: 300%;
-        height: 100px;
-    }
-
-
-    .section {
-        min-width: 300%;
-        height: 800px;
-    }
-    
-
-    .main {
-        width: 300%;
-
-    }
-
-    .footer {
-        width: 300%;
-    }
-}
-
-
-@media screen and (max-width:425px) {
-
-
-    .header {
-        display: grid;
-        grid-template-columns: 149% 149% 149%;
-        width: 107%;
-        height: 100%;
-        
-    }
-
-    .h5 {
-        font-size: 57px;
-    }
-
-    .navbar-list {
-        font-size: 30px;
-        justify-content: space-between;
-    }
-
-
-    .img-prlx {
-        height: 100%;
-        width: 110%;
-        margin: 0;
-    }
-
-    .h2 {
-        text-align: center;
-        width: 100%;
-        height: 40%;
-        font-size: 1px;
-    }
-
-    .image {
-        margin-right: 50px;
-        padding: 0%;
-    }
-
-    .main {
-        margin-left: 20px;
-        width: 1007%;
-        text-align: center;
-    }
-
-    .myschool {
-        width: 100%;
+@media screen and (max-width:780px) {
+    .navbar-item {
+        display: none;
     }
 
     .myproject {
-        justify-content: center;
-        align-items: center;
-        width: 98%;
-        align-items: center;
         display: grid;
-        grid-template-rows: 50% 50% 50%;
+        grid-template-columns: repeat(2,2fr);
     }
-
-    .p {
-        font-size: 35px;
-    }
-    
-
-    .h4 {
-        min-width: 420%;
-    }
-
-    .contact__uni{
-        align-items: center;
-        margin: 0 auto;
-        min-width: 420px;
-    }
-
-    .text-project{
+    .project{
         display: grid;
-        grid-template-rows: 50% 50% 50%;
-        font-size: 50px;
-        width: 100%;
+    }
+
+    .section {
+        height: 350px;
+    }
+    #text {
+        font-size: 40px;
+    }
+
+}
+@media screen and (max-width:460px){
+    .navbar-item{
+        display: none;
+    }
+
+    .h5 {
         text-align: center;
     }
-    .footer {
-        width:1%;
-        height: 140%;
-    }
-}
 
-
-
-@media screen and (max-width:320px) {
-    .header {
-        display: grid;
-        grid-template-rows: 60% 60% 60% 60%;
-        width: 60%;
-    }
-
-    .img-prlx {
-        width: 104%;
-        height: 100%;
-    }
-
-    .main {
-        width: 230%;
+    .image {
         margin: 0 auto;
-    }
-    .aboutme {
-        width: 120%;
-    }
-
-    .p {
-        font-size: 20px;
+        width: 230px;
+        height: 120px;
     }
 
-    .title-list {
-        margin-bottom: 100px;
+    .section {
+        height: 300px;
     }
-    
-    .myschoolr {
-        margin-top: 100px;
+
+    #text {
+        font-size: 34px;
+    }
+    .myproject {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .project{
+        display: grid;
+    }
+
+}
+
+
+@media screen and (max-width:394px) {
+    .myproject {
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+    }
+    .project{
+        display: grid;
+    }
+
+    .section {
+        height: 280px;
     }
 }
+
+
