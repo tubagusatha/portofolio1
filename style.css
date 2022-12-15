@@ -399,6 +399,7 @@ section img
         display: none;
     }
 
+
     .h5 {
         text-align: center;
     }
@@ -411,6 +412,10 @@ section img
 
     .section {
         height: 300px;
+    }
+
+    .box {
+        padding: 12px;
     }
 
     #text {
@@ -436,6 +441,10 @@ section img
     }
     .project{
         display: grid;
+    }
+
+    .container {
+        padding: 10px;
     }
 
     .section {
